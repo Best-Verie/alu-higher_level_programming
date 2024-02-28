@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -z "$PYCODE" ] && echo "Error: PYCODE environment variable is not set." && exit 1 || python3 -c "$PYCODE"
+python3 -c "$PYCODE"
