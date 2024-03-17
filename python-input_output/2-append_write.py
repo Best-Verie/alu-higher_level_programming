@@ -1,24 +1,13 @@
 #!/usr/bin/python3
-"""
-Implements append_write
-Functions:
-    - append_write
-"""
+"""Defines a function that append a string at the end of a text."""
 
 
-def append_write(file_name="", text=""):
+def append_write(filename="", text=""):
+    """Appends a string to the end of a file.
+    :param filename: the file to append to
+    :param text: the text to be appended to the file
+    :type(filename): int
+    :type(text): int
     """
-    Appends the specified content to the specified file
-    Args:
-        - file_name(str) - The name of the file to
-        append to. If the file does not exist, it
-        will be created.
-
-        - text(str) - The text to append to the file
-
-    Returns:
-        - int - The number of characters written to the
-        file
-    """
-    with open(file_name, 'a') as f:
+    with open(filename, mode='a', encoding='utf-8') as f:
         return f.write(text)

@@ -1,20 +1,9 @@
 #!/usr/bin/python3
-"""
-implements a read_file
-Functions:
-    - read_file
-"""
+'''A Python script that reads the contents of a file'''
 
 
-def read_file(file_name=""):
-    """
-    Reads a specified file name and writes its contents
-    to stdout
-    Args:
-        - file_name(str) - The name of the file to read
-    Returns:
-        - None
-    """
-    with open(file_name) as f:
-        content = f.read()
-        print(content, end="")
+def read_file(filename=""):
+    '''Reads the data from an outside file'''
+    with open(filename, encoding="utf-8") as f:
+        read_data = f.read()
+        print(read_data, end="")
